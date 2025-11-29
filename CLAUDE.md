@@ -73,6 +73,14 @@ The page is a client component because it uses:
 - Animations: gradient shifts, particle floats, button glows, card reveals
 - Responsive: Grid auto-fit patterns, mobile-first breakpoints
 
+### Analytics & Tracking
+
+**Google Analytics** is integrated via Next.js Script component in `app/layout.tsx`:
+- **Tracking ID**: G-7MELG373M6
+- **Strategy**: `afterInteractive` - loads after page becomes interactive
+- **Implementation**: Two scripts - gtag.js loader + configuration
+- Analytics tracks all page interactions automatically
+
 ## Deployment
 
 ### Production Target
