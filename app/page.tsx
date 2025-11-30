@@ -105,24 +105,30 @@ export default function Home() {
 
         <div className="content">
           <div className="logo">
-            <svg viewBox="0 0 600 120" xmlns="http://www.w3.org/2000/svg">
-              {/* Icon - Network/Connection Symbol */}
-              <circle cx="50" cy="60" r="45" fill="none" stroke="#00ffff" strokeWidth="4"/>
-              <circle cx="35" cy="40" r="6" fill="#0066ff"/>
-              <circle cx="65" cy="40" r="6" fill="#00ffff"/>
-              <circle cx="35" cy="80" r="6" fill="#0066ff"/>
-              <circle cx="65" cy="80" r="6" fill="#00ffff"/>
-              <circle cx="50" cy="60" r="6" fill="#0066ff"/>
-              <line x1="35" y1="40" x2="50" y2="60" stroke="#0066ff" strokeWidth="3"/>
-              <line x1="65" y1="40" x2="50" y2="60" stroke="#00ffff" strokeWidth="3"/>
-              <line x1="35" y1="80" x2="50" y2="60" stroke="#0066ff" strokeWidth="3"/>
-              <line x1="65" y1="80" x2="50" y2="60" stroke="#00ffff" strokeWidth="3"/>
+            <svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="dmGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" style={{stopColor: '#5B9BFF', stopOpacity: 1}} />
+                  <stop offset="100%" style={{stopColor: '#0066FF', stopOpacity: 1}} />
+                </linearGradient>
+              </defs>
+
+              {/* Circle Icon */}
+              <circle cx="100" cy="100" r="70" fill="none" stroke="#00FFFF" strokeWidth="5"/>
+
+              {/* X Pattern - 4 corner nodes connected in X shape */}
+              <circle cx="70" cy="70" r="10" fill="#5B9BFF"/>
+              <circle cx="130" cy="70" r="10" fill="#5B9BFF"/>
+              <circle cx="70" cy="130" r="10" fill="#5B9BFF"/>
+              <circle cx="130" cy="130" r="10" fill="#5B9BFF"/>
+
+              {/* X connecting lines */}
+              <line x1="70" y1="70" x2="130" y2="130" stroke="#5B9BFF" strokeWidth="5" strokeLinecap="round"/>
+              <line x1="130" y1="70" x2="70" y2="130" stroke="#5B9BFF" strokeWidth="5" strokeLinecap="round"/>
 
               {/* Text */}
-              <text x="110" y="75" fontFamily="DejaVu Sans, Arial, sans-serif" fontSize="60" fontWeight="bold" fill="#ffffff">
-                omni
-                <tspan fill="#0066ff">DM</tspan>
-                <tspan fill="#ffffff">.ai</tspan>
+              <text x="200" y="125" fontFamily="system-ui, -apple-system, sans-serif" fontSize="80" fontWeight="bold" fill="#ffffff">
+                omni<tspan fill="url(#dmGradient)">DM</tspan><tspan fill="#ffffff">.ai</tspan>
               </text>
             </svg>
           </div>
