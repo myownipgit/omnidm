@@ -104,7 +104,28 @@ export default function Home() {
         <div className="particles" id="particles"></div>
 
         <div className="content">
-          <div className="logo">🤖 OMNIDM</div>
+          <div className="logo">
+            <svg viewBox="0 0 600 120" xmlns="http://www.w3.org/2000/svg">
+              {/* Icon - Network/Connection Symbol */}
+              <circle cx="50" cy="60" r="45" fill="none" stroke="#00ffff" strokeWidth="4"/>
+              <circle cx="35" cy="40" r="6" fill="#0066ff"/>
+              <circle cx="65" cy="40" r="6" fill="#00ffff"/>
+              <circle cx="35" cy="80" r="6" fill="#0066ff"/>
+              <circle cx="65" cy="80" r="6" fill="#00ffff"/>
+              <circle cx="50" cy="60" r="6" fill="#0066ff"/>
+              <line x1="35" y1="40" x2="50" y2="60" stroke="#0066ff" strokeWidth="3"/>
+              <line x1="65" y1="40" x2="50" y2="60" stroke="#00ffff" strokeWidth="3"/>
+              <line x1="35" y1="80" x2="50" y2="60" stroke="#0066ff" strokeWidth="3"/>
+              <line x1="65" y1="80" x2="50" y2="60" stroke="#00ffff" strokeWidth="3"/>
+
+              {/* Text */}
+              <text x="110" y="75" fontFamily="DejaVu Sans, Arial, sans-serif" fontSize="60" fontWeight="bold" fill="#ffffff">
+                omni
+                <tspan fill="#0066ff">DM</tspan>
+                <tspan fill="#ffffff">.ai</tspan>
+              </text>
+            </svg>
+          </div>
           <h1 data-lang="en">AI-Powered Chat Automation<br />for Cambodia</h1>
           <h1 data-lang="km">ការធ្វើស្វ័យប្រវត្តិកម្មជជែកដោយ AI<br />សម្រាប់កម្ពុជា</h1>
 
