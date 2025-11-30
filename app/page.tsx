@@ -106,29 +106,20 @@ export default function Home() {
         <div className="content">
           <div className="logo">
             <svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <linearGradient id="dmGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" style={{stopColor: '#5B9BFF', stopOpacity: 1}} />
-                  <stop offset="100%" style={{stopColor: '#0066FF', stopOpacity: 1}} />
-                </linearGradient>
-              </defs>
+              {/* White Circle Outline */}
+              <circle cx="100" cy="100" r="70" fill="none" stroke="#FFFFFF" strokeWidth="6"/>
 
-              {/* Circle Icon */}
-              <circle cx="100" cy="100" r="70" fill="none" stroke="#00FFFF" strokeWidth="5"/>
+              {/* Blue Diagonal Line (bottom-left to top-right) */}
+              <line x1="65" y1="135" x2="135" y2="65" stroke="#4A90E2" strokeWidth="6" strokeLinecap="round"/>
 
-              {/* X Pattern - 4 corner nodes connected in X shape */}
-              <circle cx="70" cy="70" r="10" fill="#5B9BFF"/>
-              <circle cx="130" cy="70" r="10" fill="#5B9BFF"/>
-              <circle cx="70" cy="130" r="10" fill="#5B9BFF"/>
-              <circle cx="130" cy="130" r="10" fill="#5B9BFF"/>
-
-              {/* X connecting lines */}
-              <line x1="70" y1="70" x2="130" y2="130" stroke="#5B9BFF" strokeWidth="5" strokeLinecap="round"/>
-              <line x1="130" y1="70" x2="70" y2="130" stroke="#5B9BFF" strokeWidth="5" strokeLinecap="round"/>
+              {/* 3 Blue Nodes on the diagonal line */}
+              <circle cx="65" cy="135" r="11" fill="#4A90E2"/>
+              <circle cx="100" cy="100" r="11" fill="#4A90E2"/>
+              <circle cx="135" cy="65" r="11" fill="#4A90E2"/>
 
               {/* Text */}
               <text x="200" y="125" fontFamily="system-ui, -apple-system, sans-serif" fontSize="80" fontWeight="bold" fill="#ffffff">
-                omni<tspan fill="url(#dmGradient)">DM</tspan><tspan fill="#ffffff">.ai</tspan>
+                omni<tspan fill="#4A90E2">DM</tspan><tspan fill="#ffffff">.ai</tspan>
               </text>
             </svg>
           </div>
